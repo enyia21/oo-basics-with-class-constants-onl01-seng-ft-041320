@@ -13,7 +13,7 @@ class Shoe
 
   def brand=(brand)
     @brand = brand
-    if BRANDS.include? brand
+    if BRANDS.member? brand
       BRANDS
     else
       BRANDS << brand
