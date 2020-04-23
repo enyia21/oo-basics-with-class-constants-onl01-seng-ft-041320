@@ -12,8 +12,8 @@ class Shoe
   end
 
   def brand=(brand)
-    @brand = brand
-    BRANDS<<brand
+    @brand = self.brand
+    BRANDS << self.brand
     BRANDS
     # if BRANDS.member? brand
     #   BRANDS
