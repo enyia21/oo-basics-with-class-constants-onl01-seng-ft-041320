@@ -13,10 +13,11 @@ class Shoe
 
   def brand=(brand)
     @brand = brand
-    if BRANDS.member? brand
-      BRANDS
-    else
-      BRANDS << brand
-    end
+    BRANDS << brand
+    # if BRANDS.member? brand
+    #   BRANDS
+    # else
+    #   BRANDS << brand
+    # end
   end
 end
