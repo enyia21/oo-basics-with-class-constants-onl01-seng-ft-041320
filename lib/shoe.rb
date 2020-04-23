@@ -4,6 +4,7 @@ class Shoe
   BRANDS = []
   def initialize(brand)
     @brand = brand
+    BRANDS << brand
   end
 
   def cobble
@@ -12,8 +13,8 @@ class Shoe
   end
 
   def brand=(brand)
-    @brand = self.brand
-    BRANDS << self.brand
+    @brand = brand
+    BRANDS << brand
     BRANDS
     # if BRANDS.member? brand
     #   BRANDS
